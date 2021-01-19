@@ -1,0 +1,185 @@
+#intro {
+  height: 100vh;
+  position: relative;
+  .logo{
+    margin: 3rem ;
+   img{
+    width: 60%;
+    height: auto;
+   }
+  }
+  .logo-mb{
+    display: none;
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    img{
+      max-width: 50%;
+    }
+    
+   
+  }
+  .intro-first,
+  .intro-second,
+  .intro-third {
+    background-image: url("../photos/landing-1.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%
+  }
+  .intro-second {
+    background-image: url("../photos/landing-2.jpg")
+    
+  }
+  .intro-third {
+    background-image: url("../photos/landing-2.jpg");
+  }
+  .burger {
+    display: none;
+  }
+  .intro-hidden-btn{
+    display: none;
+  }
+  .intro-arrow-left,
+  .intro-arrow-right {
+    position: absolute;
+    top: 50%;
+    font-size: 4rem;
+    transform: translate(0, -50%);
+  }
+  .intro-arrow-left {
+    left: 2%;
+  }
+  .intro-arrow-right {
+    right: 2%;
+  }
+  nav {
+    display: flex;
+    height: 10vh;
+  }
+  //NAVBAR STYLING
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: 0 0 0 auto;
+    padding: 4rem;
+    position: relative;
+    height: 10vh;
+    a {
+      font-weight: 700;
+    }
+  }
+
+  
+  .intro-text-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+    height: 90vh;
+    .intro-text {
+      margin: auto;
+      color: white;
+      h2 {
+        
+        margin: auto;
+        margin: 1rem 0rem;
+        font-size: 3.5rem;
+      }
+      p {
+        font-size: 2.5rem;
+        line-height: 3.125rem;
+        margin-bottom: 2rem;
+      }
+      .more {
+        background-color: #ffffff;
+        padding: 1rem 2rem;
+        margin-top: 4rem;
+        max-width: 100px;
+        color: black;
+        font-weight: 600;
+        font-size: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+  }
+  .whatsapp {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 2;
+    font-size: 5rem;
+    color: green;
+  }
+  .consultation{
+    width: 7%;
+    text-align: center;
+    background-color: white;
+    font-size: 1.5rem;
+    position: fixed;
+    bottom: 15%;
+    right: 5%;
+    z-index: 2;
+    border-radius: 10%;
+    padding:1rem
+  }
+  .fb {
+    margin-right: 1rem;
+  }
+
+  //DROPDOWN
+  .dropdown {
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    i {
+      color: white;
+      font-size: 1.5rem;
+      padding: 0.5rem 0 0 1rem;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    position: absolute;
+    top: 90%;
+    background-color: white;
+    .arrow-dropdown {
+      color: black;
+      font-size: 1.5rem;
+      position: absolute;
+      right: 5%;
+      padding-top: 0.6rem;
+    }
+    a {
+      font-weight: 400;
+      font-size: 2rem;
+      padding: 1rem 2rem;
+    }
+    a:hover {
+      background-color: #fafafa;
+    }
+  }
+
+  .burger-black {
+    color: black;
+    z-index: 100;
+  }
+  .fixed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

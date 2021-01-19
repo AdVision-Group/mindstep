@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/267860f909.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>MINDstep psychológia Michal Murárik</title>
+    
+  </head>
+  <body>
+    <section id="intro">
+      <i onclick="introPlusSlides(1)" class="fas fa-chevron-right intro-arrow-right"></i>
+      <i onclick="introPlusSlides(-1)" class="fas fa-chevron-left intro-arrow-left"></i>
+      <div class="intro-first mySlides">
+      </div>
+      <div class="intro-second mySlides">
+      </div>
+      <div class="intro-third mySlides">
+      </div>
+      <div class="logo-mb">
+        <img src="./photos/logo.png" alt="mindstep">
+      </div>
+      <header class="main-head">
+        
+        <nav>
+          <div class="logo">
+            <img src="./photos/logo.png" alt="">
+          </div>
+          <ul id="nav-links" class="nav-links">
+            <li class = "dropdown"> <a href="#occupation">Činnosti</a>  <i class="fas fa-chevron-down"></i>
+              <div class="content">
+                <a href="#psychology">Športová psychológia <i class="fas fa-chevron-right arrow-dropdown"></i></a>
+                <a href="#training">Vzdelávanie trénerov <i class="fas fa-chevron-right arrow-dropdown"></i></a>
+                <a href="#balance">Work in balance<i class="fas fa-chevron-right arrow-dropdown"></i> </a>
+              </div>
+
+            </li>
+            <li> <a href="#michal"> O mne </a></li>
+            <li><a href="#reference"> Referencie </a></li>
+            <li><a href="#media"> Média </a></li>
+            <li><a href="#contact"> Kontakt </a></li>
+            <li class = "media-icons">
+              <a target ="_blank" href=" https://www.facebook.com/mindstep.sk"><i class="fab fa-facebook-square fb"></i></a>
+              <a target ="_blank"href="https://www.linkedin.com/in/michal-murarik-75ab0638/"><i class="fab fa-linkedin"></i></a>
+            </li>
+          </ul>
+          <a href="javascript:void(0);" class="burger">
+            <i class="fa fa-bars burger-icon"></i>
+          </a>
+        </nav>
+        <div class="fixed">
+        <a class = "consultation" href="#contact">30-minútová online konzultácia bezplatne</a>
+        <a href="tel: +421 907 722 681"><i class="fab fa-whatsapp-square whatsapp"></i></a>
+      </div>
+      </header>
+      <div class="intro-text-wrapper">
+        <div class="intro-text">
+        <h2>Mentálny tréning a psychologická príprava športovcov</h2>
+        <p>Podpora a príprava vrcholových aj hobby športovcov pri dosahovaní výkonov</p>
+        <a href = "#psychology"class="more myButtons">Zisti viac</a>
+      </div>
+      <div class="intro-text">
+        <h2>Vzdelávanie pre trénerov, rodičov a vzdelávanie klubov</h2>
+        <p>Rozvoj dôležitých zručností v oblasti psychológie športu pre okolie športovca!</p>
+        <a href = "#training"class="more myButtons">Zisti viac</a>
+      </div>
+      <div class="intro-text">
+        <h2>Work in Balance - Life koučing, vyhorenie a stres</h2>
+        <p>Sprevádzanie ťažkými situáciami v živote aj práci, nastavenie rovnováhy v živote aj v práci</p>
+        <a href = "#balance"class="more myButtons">Zisti viac</a>
+      </div>
+    </div>
+   
+    </section>
+    <section id="hero">
+      <div class="hero-wrapper">
+      <img
+        class="portrait"
+        src="./photos/michal.png"
+        alt="michal murarik mindstep psychologia"
+      />
+      <div class="hero-descp">
+        <h2>MICHAL MURÁRIK</h2>
+        <p class="quote">
+          "Šampióni sa rodia z niečoho, čo majú hlboko vo svojom vnútri, túžbu,
+          sen, víziu."
+        </p>
+        <span class="quote-name">-Muhamad ali</span>
+      </div>
+
+      </div>
+
+    </section>
+
+    <!-- OCCUPATION SECTION-->
+
+    <section id="occupation">
+
+      <div class="wrapper">
+        <img class = "top-bg" src="./photos/wave-top.png" alt="">
+
+        <div id ="psychology" class="occupation-div psychology transition">
+          <div class="occupation-wrapper">
+
+          <div class="picture">
+            <img
+              class="left"
+              src="./photos/top.png"
+              alt=""
+            />
+          </div>
+          <div class="picture mobile">
+            <img
+              class="left"
+              src="./photos/sport.png"
+              alt=""
+            />
+          </div>
+          <div class="occupation-text">
+            <h2>Mentálny tréning a psychologická príprava športovcov</h2>
+            <p>
+              Podpora a príprava vrcholových aj hobby športovcov pri dosahovaní
+              výkonov
+            </p>
+            <button class="programs btn-hov" onclick="occupationSlides(this)">
+              Programy <i class="fas fa-chevron-down down"></i>
+            </button>
+          </div>
+        </div>
+        </div>
+            <!--  PROGRAM 1 -->
+
+        <div class="programs-all">
+          <i id = "first-arrow"onclick ="plusSlides(1, this.id)" class="fas fa-chevron-right arrow-right"></i>
+          <i id = "first-arrow" onclick ="plusSlides(-1,this.id)" class="fas fa-chevron-left arrow-left"></i>
+          
+          <div id = "programs-beginner" class = "programs-beginner slider-component ">
+            <h2>Beginner, Hobby</h2>
+            <p>
+              Nemáš zo športu radosť? Nebaví ťa? Si večný začiatočník? Nedarí sa
+              ti zlepšovať a dosiahnuť stanované ciele(schudnúť..., spevniť...,
+              odbehnúť..., vydržať..., naučiť sa...atď.)? Si psychicky
+              vyčerpaný? Máš pocit, že máš slabú vôľu a sebadisciplínu? <br />
+              <br />
+              <br />
+              Ak si odpovedal áno na niektorú z týchto otázok, tak je program
+              vhodný pre teba. Program je určený najmä ľudom začínajúcim so
+              športom alebo hobby športovcom, ktorý sa pravidelne nezúčastňujú
+              súťaží, prípadne majú cieľ zúčastniť sa, alebo prekonať seba
+              samého. Cieľom programu je zvýšiť chuť do tréningu a nastaviť
+              myseľ tak aby tréning poskytoval radosť a pomohol dosiahnuť osobné
+              ciele. Po absolvovaní programu Beginer/Hobby by ste mali poznať
+              základné techniky mentálneho tréningu, ktoré vám pomôžu zlepšovať
+              sa efektívnejšie a bez extrémnej vôlovej námahy s rizikom
+              zanechania športovej aktivity. <br />
+              <br />
+              <br />
+            </p>
+            <ul>
+              <li>
+                <i class="fas fa-circle green"></i>Úvodné zoznamovacie
+                stretnutie, Analýza potrieb, dotazníky, tvorba plánu
+              </li>
+              <li>
+                <i class="fas fa-circle green"></i>Motivácia, Demotivácia,
+                Ciele, Sebadisciplína
+              </li>
+              <li>
+                <i class="fas fa-circle green"></i>Tréning vôle, Zvyšovanie
+                mentálnej odolnosti
+              </li>
+              <li>
+                <i class="fas fa-circle green"></i>Tréning koncentrácie,
+                Zvládanie emócii
+              </li>
+              <li>
+                <i class="fas fa-circle green"></i>Sport in Balance, Radosť z
+                športu, Energymanagement
+              </li>
+
+              <p class="bottom-bold">
+                + 1 účasť na tréningu, kedykoľvek počas trvania programu
+              </p>
+            </ul>
+            
+          </div>
+           <!--  PROGRAM 2 -->
+
+          <div  class = "programs-beginner race slider-component">
+            <h2>Race / Profi</h2>
+            <p>
+              Máš kolísavé výsledky? Nedarí sa ti podať na pretekoch výkon na
+              ktorý máš natrénované? Robíš veľa chýb? Neveríš si? Strácaš chuť a
+              motiváciu do tréningu? Máš trému a stres pred pretekmi, zápasom?
+              <br />
+              <br />
+              <br />
+              Ak si odpovedal áno na niektorú z týchto otázok, tak je program
+              vhodný pre teba. Program je určený najmä skúseným športovcom,
+              ktorý sa pravidelne zúčastňujú pretekov a majú ambíciu ašpirovať
+              na popredné umiestnenia. Cieľom programu je pomôcť športovcovi
+              zvýsiť mentálny výkon a dosahovať optimálne výsledky, ktoré
+              zodpovedajú jeho aktuálnej výkonnosti. Po absolvovaní programu
+              Race/Profi by mal športovec byť schopný podávať výsledky na ktoré
+              má natrénované, psychicky zvládať tréningovú aj pretrkovú/zápasovy
+              záťaž, optimálne sa koncentrovať a lepšie zvládať svoje myšlienky
+              a emócie.
+              <br />
+              <br />
+              <br />
+            </p>
+            <ul>
+              <li>
+                <i class="fas fa-circle circle"></i>Úvodné zoznamovacie
+                stretnutie, Analýza potrieb, dotazníky, tvorba plánu
+              </li>
+              <li>
+                <i class="fas fa-circle circle"></i>Motivácia, Demotivácia,
+                Ciele, Sebadisciplína
+              </li>
+              <li>
+                <i class="fas fa-circle circle"></i>Tréning vôle, Zvyšovanie
+                mentálnej odolnosti
+              </li>
+              <li>
+                <i class="fas fa-circle circle"></i>Tréning koncentrácie,
+                Zvládanie emócii, Sebavedomie
+              </li>
+              <li>
+                <i class="fas fa-circle circle"></i>Príprava na preteky,
+                Zvládanie predštartových stavov
+              </li>
+              <li>
+                  <i class="fas fa-circle circle"></i>Pretrénovanie, Prevencia vyhorenia, Energymanagment
+              </li>
+              </li>
+              <p class="bottom-bold">
+                +1 jedna účasť na tréningu alebo preteku/zápase kedykoľvek počas trvania programu
+              </p>
+            </ul>
+          </div>
+          <!--  PROGRAM 3 -->
+          <div  class = "programs-beginner race slider-component">
+            <h2>Psychologická príprava na súťaž / zápas </h2>
+            <p>
+              Mnohí športovci dokážu podať výborný výsledok na tréningu, ale často to nedokážu preniesť do preteku alebo zápasu. Séria viacerých techník vám pomôže stať sa tzv. súťažným typom, ktorý dokáže svoj výkon počas súťaže dokonca ešte zlepšiť. 
+              <br />
+              <br />
+              <br />
+            </p>
+            <ul>
+              <li>
+                <i class="fas fa-circle circle"></i>Modelovaný tréning, Handicapovaný tréning 
+              </li>
+              <li>
+                <i class="fas fa-circle circle"></i>Psychoregulácia predštartových stavov
+              </li>
+              <li>
+                <i class="fas fa-circle circle"></i>Pretekový mindset
+              </li>
+              <li>
+                <i class="fas fa-circle circle"></i>Optimálna aktivačná úroveň – optimálne nastavenie na súťaž
+              </li>
+              
+              
+              <p class="bottom-bold">
+                4 stretnutia: Cena: 150 €
+              </p>
+            </ul>
+          </div>
+          <!--  PROGRAM 4 -->
+          <div  class = "programs-beginner race slider-component">
+            <h2>Kognitívny tréning </h2>
+            <p>
+              Mozog totiž môžeme trénovať rovnako ako sval. tréning psychických/poznávacích schopností potrebných v športe. Štatistiky ukazujú, že dnešní mladí športovci sú zahltení modernými technológiami, ktoré znižujú ich kognitívne funkcie ako pozornosť / koncentrácia, pamäť. Takisto sa ukazuje, že dokážu horšie zvládať svoje emócie ako hnev, frustrácia, sklamanie z prehre a pod. Kognitívny tréning je súbor rôznych mentálnych techník aj postupov, ktoré ich naučím na zlepšenie týchto funkcií. Ich používanie im pomôže zlepšiť ich mentálny výkon nielen v športe ale aj v škole a bežnom živote.
+              <br />
+              <br />
+              <br />
+            </p>
+            <ul>
+              
+              <p class="bottom-bold">
+                Cena 3 stretnutia (3x60 min) – 120 €
+              </p>
+            </ul>
+          </div>
+          <!--  PROGRAM 5 -->
+          <div  class = "programs-beginner race slider-component">
+            <h2>Mentálne programovanie </h2>
+            <p>
+              programovanie mysle. Spôsob myslenia nie je vrodený ale získaný / naučený. Počas športovej kariéry a života si osvojíme od okolia rôzne postoje / názory / reakcie, ktoré sú vlastne naše mentálne programy, podľa ktorých reagujeme. Niektoré sú pre športový výkon užitočné a pomáhajú športovcovi a niektoré mu škodia. Počas 3 stretnutí si rozoberieme viaceré oblasti a programy, ktoré sú pre výkon športovca neužitočné alebo škodlivé a pokúsime sa myslenie / postoje preprogramovať aby športovcovi pomáhali dosahovať lepší výkon. 
+              <br />
+              <br />
+              <br />
+            </p>
+          
+              
+              <p class="bottom-bold">
+                Cena: 3 stretnutia (3x60 min) – 120 €             
+               </p>
+            
+          </div>
+          <div class ="dots" style="text-align:center">
+            <span  id = "dot-first" onclick="currentSlide(1,this.id)"><i class="fas fa-circle green dot"></i></span> 
+            <span id = "dot-first" onclick="currentSlide(2,this.id)"><i class="fas fa-circle green dot"></i></span> 
+            <span id = "dot-first" onclick="currentSlide(3, this.id)"><i class="fas fa-circle green dot"></i></span> 
+            <span id = "dot-first"onclick="currentSlide(4, this.id)"><i class="fas fa-circle green dot"></i></span> 
+            <span  id = "dot-first" onclick="currentSlide(5, this.id)"><i class="fas fa-circle green dot"></i></span> 
+          </div>
+        </div>
+
+        
+        <div id ="training" class="occupation-div training transition">
+          <div class="occupation-wrapper">
+         
+          <div class="picture">
+            <img class="left trainer" src="./photos/center.png" alt="" />
+          </div>
+          <div class="picture mobile">
+            <img
+              class="left"
+              src="./photos/trainer.png"
+              alt=""
+            />
+          </div>
+          <div class="occupation-text">
+            <h2>Vzdelávanie pre trénerov, rodičov a vzdelávanie klubov</h2>
+
+            <p>
+              Rozvoj dôležitých zručností v oblasti psychológie športu pre
+              okolie športovca
+            </p>
+            <button class="programs-second btn-hov" onclick="occupationSlides(this)">
+              Programy <i class="fas fa-chevron-down down"></i>
+            </button>
+          </div>
+          </div>
+         
+
+          
+        </div>
+        <div class="programs-all">
+          <i id ="arrow-second" onclick ="plusSlides(1,this.id)" class="fas fa-chevron-right arrow-right"></i>
+          <i id ="arrow-second"onclick ="plusSlides(-1,this.id)" class="fas fa-chevron-left arrow-left"></i>
+          
+          <div  class = "programs-learning slider-component-second">
+            <h2>Prednášky a Workshopy pre trénerov </h2>
+            <p>
+              Prax ukázala, že aj tréneri sa potrebujú neustále vzdelávať aj v oblasti psychológie.
+              Prednášky sú zamerané na témy komunikácia v tíme, komunikácia s rodičmi, motivácia športovcov
+              a iné. Praktickým spôsobom si prejdeme aké sú rôzne nové trendy v oblasti športovej psychológie
+              a mentálnej prípravy, rozoberieme si príklady z trénerskej praxe. Tréneri môžu počas prednášky
+              veľa diskutovať a vymieňať si názory a skúsenosti. Cieľom je aby sa naučili nové techniky,
+              ktoré môžu používať samostatne vo svojej trénerskej praxi.
+            </p>
+          </div>
+          <div  class = "programs-learning slider-component-second hide">
+            <h2>Prednášky a workshopy pre rodičov </h2>
+            <p>
+              Aj rodičia čoraz častejšie výraznejším spôsobom zasahujú do športovej prípravy svojich detí.
+               Preto prichádzajú rôzne kluby, kde sa chcú vzdelávať aj rodičia ako efektívne podporovať 
+               vlastné dieťa v športe. Prednášky majú vačšinou individuálne zadanie podľa témy, ktoré rodičia 
+               potrebujú. Najčastejšie témy sú ako byť užitočný pre dieťa v športe, ako motivovať/nedemotivovať 
+               svoje dieťa. Rodičia majú priestor veľa diskutovať a komunikovať svoje individuálne otázky, ktoré
+                sú užitočné pre ich dieťa.
+            </p>
+          </div>
+          <div  class = "programs-learning slider-component-second hide">
+            <h2>Dlhodobá spolupráca - šport</h2>
+            <p>
+              Balík 1 ročná spolupráca – najefektívnejšia spolupráca so športovým psychológom je spolupráca 
+              dlhodobá. Športový psychológ by nemal hasiť aktuálne problémy, ale systematickou pravidelnou prácou 
+              so športovcom predchádzať možným poklesom športového výkonu. Počas dlhodobej spolupráce je možné 
+              lepšie spoznať individuálne potreby športovca a pracovať tak efektívnejšie. Mnohé oblasti mentálneho
+               tréningu si vyžadujú dlhodobé prácu, preto takáto forma prináša aj najlepšie výsledky.      
+              <br>
+              <br>
+               Cena dohodou: 3 mesačná skúšobná doba: platba potom na 3 mesiace dopredu
+               
+            </p>
+               <h3>Balík obsahuje</h3>
+               <p>
+                Stretnutia športovcom 60 min (osobne alebo online) cca. každé dva týždne <br>
+                Možná práca s celým systémom: tréner, tím, rodičia – podľa dohody a potreby <br>
+                Telefonické konzultácie max. 30 min – priebežne cca.  1 x týždenne <br>
+                Účasť na súťažiach – 1 x mesačne
+                <br>
+                <br>
+                Cena dohodou:
+                <br>
+                <br>
+                3 mesačná skúšobná doba: platba potom na 3 mesiace dopredu
+               </p>
+               <h3>Balík polročná spolupráca </h3>
+               <p>
+                Stretnutia športovcom 60 min (osobne alebo online) cca. každé dva týždne <br>
+                Možná práca s celým systémom: tréner, tím, rodičia – podľa dohody a potreby <br>
+                Telefonické konzultácie max. 30 min – priebežne cca.  1 x týždenne <br>
+                Účasť na súťažiach – 1 x mesačne   
+                <br>
+                <br>
+                3 mesačná skúšobná doba: platba vždy na 3 mesiace dopredu
+               </p>
+          </div>
+          <div class ="dots" style="text-align:center">
+            <span  id = "dot-second" onclick="currentSlide(1,this.id)"><i class="fas fa-circle orange  dot-second "></i></span> 
+            <span id = "dot-second" onclick="currentSlide(2,this.id)"><i class="fas fa-circle orange  dot-second"></i></span> 
+            <span id = "dot-second" onclick="currentSlide(3, this.id)"><i class="fas fa-circle orange dot-second"></i></span> 
+          </div>
+        </div>
+
+        
+        <div id ="balance" class="occupation-div balance-bg transition">
+          <div class="occupation-wrapper">
+            <div class="picture">
+              <img class="left balance" src="./photos/bottom.png" alt="" />
+            </div>
+            <div class="picture mobile">
+              <img
+                class="left"
+                src="./photos/work.png"
+                alt=""
+              />
+            </div>
+            <div class="occupation-text">
+              <h2>Work in Balance - Life koučing, vyhorenie a stress</h2>
+
+              <p>
+                Sprevádzanie ťažkými situáciami v živote aj práci, nastavenie
+                rovnováhy v živote aj v práci
+              </p>
+              <button class="programs-third btn-hov" onclick = "occupationSlides(this)">
+                Programy <i class="fas fa-chevron-down down"></i>
+              </button>
+            </div>
+            </div>
+        
+          <h1 class="heading-michal">O MNE</h1>
+        </div>
+        <div class="programs-all">
+          <i id ="arrow-third" onclick ="plusSlides(1,this.id)" class="fas fa-chevron-right arrow-right"></i>
+          <i id ="arrow-third"onclick ="plusSlides(-1,this.id)" class="fas fa-chevron-left arrow-left"></i>
+          <div  class = "programs-balance slider-component-third">
+            <h2>Vyhorenie </h2>
+            <p>
+              Cítite sa unavený, vôbec vás nebaví práca, ste podráždení na ľudí, nič sa
+              vám nechce a máte odpor aj k jednoduchým činnostiam? Toto sú najčastejšie
+              príznaky vyhorenia, ktoré netreba podceňovať.
+              <br> <br>
+              Vyhorenie prebieha ako proces, ktorého varovné prejavy je dôležité neprehliadnuť.
+               Objavujú sa emocionálne príznaky, príznaky v správaní, ako aj fyzické. Po 
+               štádiu nadšenia prichádza vytriezvenie, sklamanie a apatia. Konečné štádium 
+               je vyhorenie, emocionálna a telesná vyčerpanosť, odstup od ľudí, zníženie pracovného
+               výkonu a strata osobného uspokojenia. Ak sa vyhorenie nerieši, môže prejsť do depresie.
+               <br> <br>
+               Z mojich skúseností ako pracovného a organizačného psychológa sa dokážem vcítiť do 
+               situácii, ktoré klient prežíva a dokážem sa rýchlejšie napojiť na jeho potreby. 
+               Pracujem aj ako externý konzultant a kouč pre viaceré nadnárodné spoločnosti v 
+               oblasti zvládania stresu, psychickej odolnosti a manažmentu času, ktoré pomáhajú 
+               tvoriť lepšie pracovné prostredie pre zamestnancov ako prevencia pred vyhorením.
+               <br> <br>
+               Cena za stretnutie 40e
+            </p>
+          </div>
+          <div  class = "programs-balance slider-component-third hide-second">
+            <h2>Life koučing </h2>
+            <p>
+              „Život nemá zmysel, životu treba dať zmysel“ Carl Gustav Jung
+              <br> <br>
+              Potrebujete si upratať v živote? Hľadáte zmysel života? Neviete aká je vaša životná cesta? 
+              Máte pocit, že nežijete ale len prežívate? Neviete kam smerujete?
+               <br> <br>
+               Tak práve pre vás by mohol byť life koučing vhodný. Pomáha spraviť poriadok v živote. Nastaviť
+                si vašu životnú cestu tak, aby ste sa neocitli v slepej uličke, z ktorej vedie len cesta
+                 späť a tá býva ťažká. V práci klientom využívam techniky life koučingu a naratívnej 
+                 terapie, ktoré vychádzajú z princípu jedinečnosti každého človeka a preto hľadáme a 
+                 kreujeme jedinečnú životnú cestu spolu s klientom. Výsledkom tejto práce je väčší pocit 
+                 sebarealizácie, spokojnosti. 
+               <br> <br>
+               Cena za stretnutie 40e
+            </p>
+          </div>
+          <div  class = "programs-balance slider-component-third hide-second">
+            
+              <h2>Stres </h2>
+              <p>
+                Hoď sa do pohody:
+               <br> <br>
+                Ste počas dňa v neustálom kolotoči úloh a povinností? Neviete vypnúť a relaxovať? 
+                Ste stále napätí a podráždení? Máte pocit, že je toho na vás veľa.
+                 <br> <br>
+                 Práve pre vás je určený Program na zvládanie stresu, ktorý vám individuálne nastavím 
+                 podľa vašich potrieb s využitím najnovších poznatkov o strese. Cieľom bude individuálny 
+                 program, ktorý zohľadňuje vašu osobnosť, možnosti a schopnosti, ktorý vám pomôže ľahšie 
+                 zvládať náročné obdobia a výzvy.
+                 <br> <br>
+                  Typológia stresu. Akým spôsobom zvládate stres. Analýza stresových podnetov
+                  Analýza zlyhaní a „nášlapných mín“ pri zvládaní stresu
+                  Manažment stresových podnetov, Sebaorganizácia a manažment priorít a času
+                  Relaxácie, Meditácie, Dýchanie, Wim hof, Mindfulness cvičenie
+                  <br> <br>
+                  5 stretnutí – 150€
+              </p>
+            </div> 
+
+          <div class ="dots" style="text-align:center">
+            <span  id = "dot-third" onclick="currentSlide(1,this.id)"><i class="fas fa-circle blue  dot-third "></i></span> 
+            <span id = "dot-third" onclick="currentSlide(2,this.id)"><i class="fas fa-circle blue  dot-third"></i></span> 
+            <span id = "dot-third" onclick="currentSlide(3, this.id)"><i class="fas fa-circle blue dot-third"></i></span> 
+          </div>
+        </div>
+        <img class = "bottom-bg" src="./photos/wave-bottom.png" alt="">
+
+      </div>
+    </section>
+    <section id="michal">
+
+      <div class="bg-wrap">
+
+      </div>
+
+      <div class="media-text">
+        <h2>Môj prístup</h2>
+        <p>Každý psychólog má svoj vlastný a osobitý štýl, čo je dobre, pretože každému klientovi vyhovuje niečo iné. Môj prístup vystihuje najmä ľudskosť a autenticita, kedže som v prvom rade človekom a až potom terapeutom. Pozerám sa na každého človeka ako na špecifickú osobnosť, ktorá potrebuje individuálny prístup a individuálne riešenie. Moja skúsenosť je taká, že to čo pomohlo jednému klientovi, druhému nemusí, dokonca niekedy môžu až uškodiť. Pracujem najmä na riešenie orientovaným prístupom vychádzajúceho zo Solution focused brief therapy a Brief coachingu, ktorý je krátkodobý a hľadá užitočné riešenia pre klienta. Tento prístup spadá patrí do systemického prístupu, ktorý pracuje s celým systémom, ktorý športovca, či už pozitívne alebo negatívne ovplyvňuje. Cieľom mojej práce je dosihnuť zmenu myslenia</p>
+        <h2>Môj príbeh</h2>
+        <p>Nakoľko využívam aj naratívny prístup, ktorý je charakteristický príbehmi a životnou cestou, tak by ste  mali poznať aj môj životný príbeh. Pochádzam z mesta Púchov, kde som chodil aj na základnú školu a Gymnázium. Od malička ma rodičia viedli k športu a najmä lyžovaniu, ktorému som sa neskôr venoval aj na vrcholovej úrovni, kde som bol členom juniorskej aj mužskej reprezentácie. Po strednej škole som začal študovať na Fakulte telesnej výchovy a športu, nakoľko som chcel ostať pracovať v športe. Na škole som však pochopil, že sa chcem rozvíjať aj iným smerom – psychologickým, nakoľko ma to vždy lákalo a fascinovalo ako môže psychika ovplyvňovať výkon. Rozhodol som sa, že  študovať aj psychológiu na Filozofickej Fakulte – odbor psychológia, pretože ma pracovne viac napĺňalo trénovať myseľ ako telo. Po skončení lyžiarskej kariéry v 25 rokoch som sa venoval 2 roky trénovaniu mladých lyžiarov aby som si vyskúšal aká je práca trénera, čo mi veľmi pomohlo aj v mojej terajšej práci športového psychológa. Keďže práca športového psychológa si vyžaduje praktický prístup, tak sa prihlásil do praktickejšieho vzdelávania, ktorým bol psychoterapeutický výcvik v Systemickej psychoterapii, kde som sa pod supervíziou učil a prakticky pracoval s klientami. Štúdium v oblasti športovej psychológie som si rozšíril rigoróznou skúškou a obhajobou výskumnej práce opäť na mojej Alma Mater FTVŠ UK v Bratislave aby som sa od roku 2011 mohol naplno venovať práci v tejto oblasti.</p>
+
+      </div>
+              <h1 class="heading-reference">REFERENCIE</h1>
+    </section>
+    <section id="reference">
+      <div class="reference-wrapper">
+        <div class="review">
+          <h2 class ="reviewer"><ion-icon class = "person-review" name="person"></ion-icon> Viktória</h2>
+          <div class="stars">
+          <ion-icon class = "star" name="star"></ion-icon>
+          <ion-icon class = "star" name="star"></ion-icon>
+          <ion-icon class = "star" name="star"></ion-icon>
+          <ion-icon class = "star" name="star"></ion-icon>
+          <ion-icon class = "star" name="star"></ion-icon>
+          </div>
+          <p>Povedala by som to takto: Terapia a sedenia ma podnietili nie len o tom hovoriť, ale aj pracovať na sebe. Rady ktoré som dostala, som využila a stále využívam v praxi a posúvajú ma dopredu. Cieľ som dosiahla a moje myslenie sa zmenilo na lepšie a slobodnejšie. Môžem iba odporučiť, výsledok stojí zato!
+
+
+          </p>
+        </div>
+        <div class="review">
+          <h2 class ="reviewer"><ion-icon class = "person-review" name="person"></ion-icon> Lenka</h2>
+          <div class="stars">
+          <ion-icon class = "star" name="star"></ion-icon>
+          <ion-icon class = "star" name="star"></ion-icon>
+          <ion-icon class = "star" name="star"></ion-icon>
+          <ion-icon class = "star" name="star"></ion-icon>
+          <ion-icon class = "star" name="star"></ion-icon>
+          </div>
+          <p>
+            Spolupráca s pánom Murárikom mi v športe posunula hranice. Podarilo sa nám odstrániť bariéry, ktoré som mala, a taktiež som si usporiadala myšlienky a ciele. Na každom tréningu a preteku rady využívam a s výsledkami som spokojná.
+          </p>
+        </div>
+        
+      </div>
+      <ion-icon onclick ="referencePlusSlides(1)" class = "review-right" name="chevron-forward-circle-outline"></ion-icon>
+      <ion-icon onclick ="referencePlusSlides(-1)" class = "review-left" name="chevron-back-circle-outline"></ion-icon>
+
+      
+      
+      <h1 class="heading-media">MÉDIA</h1>
+  </section>
+    <section id="media">
+      <div class="bg-media">
+        
+      </div>
+      <div class="media-wrapper">
+      <div class="media-content">
+        <h2>Oblasti pôsobenia</h2>
+        <div class="media-content">
+          <a target = "_blank" href="https://www.cyklistikaszc.sk/sk/submenu/sportovy-psycholog">cyklistikaszc.sk</a>
+          <p>Slovenský zväz cyklistiky - ŠPORTOVÝ PSYCHOLÓG</p>
+        </div>
+        <div class="media-content">
+          <a  target = "_blank" href="http://www.sportpsych.sk/michal-murarik">sportpsych.sk</a>
+          <p>PaeDr. Mgr. Michal Murárik</p>
+        </div>
+        <div class="media-content">
+          <a  target = "_blank" href="https://www.maxman-consultants.com/consultants/michal-murarik">maxman-consultants.sk</a>
+          <p>Michal Murárik</p>
+        </div>
+      </div>
+      <div class="media-content">
+        <h2>Články</h2>
+        <div class="media-content">
+          <a target = "_blank" href="https://dennikn.sk/1972333/predstieral-ze-zastupuje-stredoafricku-republiku-beckerov-pribeh-od-wimbledonu-po-bankrot/?cst=de712d087a5d82c7844980dbf777dadabd871e80">dennikn.sk</a>
+          <p>Chceš začať Športovať? Naučte mozog fungovať iným spôsobom, hovorí športový psychológ</p>
+        </div>
+        <div class="media-content">
+          <a target = "_blank" href="https://dennikn.sk/1635649/chcete-zacat-sportovat-naucte-mozog-fungovat-inym-sposobom-hovori-sportovy-psycholog/?fbclid=IwAR1ardTHzlhzrUYFW8NquZaZsjH7EKlFOdEc9XA7Cym6hTOltqxIzME5jLM">dennikn.sk</a>
+          <p>Predstieral, že zastupuje Stredoafrickú republiku. Beckerov príbeh of Wimbledonu po bankrot</p>
+        </div>
+      </div>
+
+      <div class="media-content">
+        <h2>Videá</h2>
+        <div class="media-content">
+          <a target = "_blank" href="https://www.youtube.com/watch?v=W_ACzXt6EEw&feature=youtu.be">youtube.com</a>
+          <p>Sebapoznanie ako cesta k práci snov | MAXMAN ACADEMY Michal Murárik</p>
+        </div>
+        <div class="media-content">
+          <a target = "_blank" href="https://www.youtube.com/watch?v=4HoX1_X75Gw&feature=youtu.be">youtube.com</a>
+          <p>Michal Murárik</p>
+        </div>
+      </div>
+    </div>
+
+      <h1 class="heading-contact">KONTAKT</h1>
+    </section>
+    <section id="contact">
+      <div class="contact-info">
+        <div class="info">
+          <div class="phone">
+            <ion-icon name="call"></ion-icon>
+            <p style="font-size: 20px;">
+              +421 907 722 681
+            </p>
+          </div>
+          <div class="email">
+            <ion-icon name="mail"></ion-icon>
+            <p style="font-size: 20px;">
+              michal.murarik@gmail.com
+            </p>
+          </div>
+          <div class="address">
+            <ion-icon name="navigate"></ion-icon>
+            <p style="font-size: 20px;">
+              Kozia 19, Bratislava
+            </p>
+          </div>
+        </div>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2662.0980458057275!2d17.100101215989124!3d48.146914979224185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c895c01b0a5b3%3A0xb22a0d5498f740b8!2sMindstep!5e0!3m2!1ssk!2ssk!4v1608488989247!5m2!1ssk!2ssk" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="footer-wrapper">
+        <div class="sitemap">
+          <h2>Sitemap</h2>
+          <a href="#occupation">Činnosti</a>
+          <a href="#michal">O mne</a>
+          <a href="#reference">Referencie</a>
+          <a href="#media">Média</a>
+          <a href="#contact">Kontakt</a>
+        </div>
+        <div class="activity">
+          <h2>Činnosti</h2>
+          <a href="#psychology">Športová psychológia</a>
+          <a href="#training">Vzdelávanie trénerov</a>
+          <a href="#balance">Work in balance</a>
+        </div>
+        <div class="contact">
+          <h2>Kontakt</h2>
+          <a href="mailto:michal.murarik@gmail.com">michal.murarik@gmail.com</a>
+          <a href="tel: +421 907 722 681">+421 907 722 681</a>
+          <a href="">Kozia 19</a>
+          <a href="">Bratislava, Slovensko</a>
+          <div class="socials">
+            <a target = "_blank" href="https://www.facebook.com/mindstep.sk"><i class="fab fa-facebook-square"></i></a>
+            <a target = "_blank" href="https://www.linkedin.com/in/michal-murarik-75ab0638"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <script>
+      var review = document.getElementsByClassName("review");
+
+      //BURGER ON MOBILES
+   
+        
+          
+          $(".burger").on('click', function() {
+            $(".nav-links").toggleClass("flex");
+
+          });
+      
+       
+          $('.nav-links>li>a').on('click', function(){
+             $(".nav-links").toggleClass("flex");
+           });
+      
+      
+      $(".dot").hide();
+      $(".dot-second").hide();
+      $(".dot-third").hide();
+      var slideIndex = 1;
+
+      //OCCUPATION SLIDES
+
+      function occupationSlides(c) {
+        if($(c).hasClass("programs")){
+          var program = ".programs-beginner";
+          var div = ".psychology";
+          var color = "#282828";
+          var dot = ".dot";
+          var toHide = ".race";
+          var first =".dot:first"
+          var active = "active";
+          var textColor = "white"
+
+        } else if($(c).hasClass("programs-second")){
+          var program = ".programs-learning";
+          var div = ".training";
+          var color = "#282828";
+          var dot = ".dot-second";
+          var toHide = ".hide";
+          var first =".dot-second:first"
+          var active = "active-second";
+          var textColor = "white"
+
+        } else {
+          var program = ".programs-balance";
+          var div = ".balance-bg";
+          var color = "#282828";
+          var dot = ".dot-third";
+          var toHide = ".hide-second";
+          var first =".dot-third:first"
+          var active = "active-third";
+          var textColor = "white"
+
+        }
+        
+        if($(program).is(":visible")){
+          $(div).css("background-color", "#f2f2f2");
+          $(div).css("color", "black");
+          $(program).slideUp();
+          $(dot).hide();
+          $(dot).removeClass(active);
+
+        } else{
+          slideIndex =1;
+          $(div).css("background-color", color);
+          $(div).css("color", textColor);
+          $(program).slideDown();
+          $(toHide).hide();
+          $(dot).show();
+          $(first).toggleClass(active);
+        }
+      }
+      
+    
+
+//REFERENCE SLIDER
+var referenceIndex = 1;
+referenceSlider(referenceIndex);
+
+function referencePlusSlides(n) {
+  referenceSlider(referenceIndex += n);
+}
+function referenceSlider(n) {
+  var i;
+  var reviews = document.getElementsByClassName("review");
+
+  if (n > reviews.length) {referenceIndex = 1}    
+  if (n < 1) {referenceIndex = reviews.length}
+  for (i = 0; i < reviews.length; i++) {
+      reviews[i].style.display = "none";  
+ 
+  }
+
+  reviews[referenceIndex-1].style.display = "block";  
+
+}
+//INTRO SLIDER
+var introSlideIndex = 1;
+introSlider(introSlideIndex);
+
+function introPlusSlides(n) {
+  introSlider(introSlideIndex += n);
+}
+
+function introSlider(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var buttons = document.getElementsByClassName("myButtons");
+  var text = document.getElementsByClassName("intro-text")
+  if (n > slides.length) {introSlideIndex = 1}    
+  if (n < 1) {introSlideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+      text[i].style.display = "none";  
+ 
+  }
+
+  slides[introSlideIndex-1].style.display = "block";  
+  text[introSlideIndex-1].style.display = "block";  
+
+}
+
+//OCCUPATION SLIDER
+
+function plusSlides(n,id) {
+  showSlides(slideIndex += n, id);
+  
+}
+
+function currentSlide(n,id) {
+  console.log(this.id);
+  showSlides(slideIndex = n, id);
+}
+
+function showSlides(n,slidedDivs) {
+  var d;
+  var color;
+if(slidedDivs === "first-arrow" || slidedDivs === "dot-first"){
+  color = " active";
+  d ="dot";
+  slidedDivs ="slider-component";
+} else if (slidedDivs === "arrow-second" || slidedDivs === "dot-second"){
+  color = " active-second";
+  d = "dot-second";
+  slidedDivs = "slider-component-second";
+
+} else if( slidedDivs === "arrow-third" || slidedDivs === "dot-third"){
+  color = " active-third";
+  d = "dot-third";
+  slidedDivs = "slider-component-third";
+}
+  var i;
+  var slides = document.getElementsByClassName(slidedDivs);
+  var dots = document.getElementsByClassName(d);
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(color, "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += color;
+}
+
+
+//DROPDOWN MENU
+$(".content").hide();
+if(window.outerWidth > 1081) {
+$(document).ready(function () {
+    $(".dropdown").hover(function () {
+     $(this).find('.content').fadeToggle();
+    });
+});
+} 
+    </script>
+  </body>
+</html>

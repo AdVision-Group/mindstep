@@ -1,0 +1,44 @@
+#michal {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 18rem;
+  padding-top: 8rem;
+ // .wave-bottom{
+  //  width: 100%;
+   // position: absolute;
+   // z-index: -1;
+   //bottom: 150vh;
+  //}
+  .bg-wrap {
+    background-image: url("/photos/mediabg.png");
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    filter: brightness(0.5);
+  }
+
+  .media-text {
+    width: 80%;
+    margin: auto;
+    color: white;
+    filter: brightness();
+
+    p,
+    h2 {
+      margin: 3rem 0rem;
+      line-height: 3.9rem;
+    }
+  }
+  .heading-reference {
+    position: absolute;
+    bottom: 0;
+    line-height: 0.75;
+    color: #f8f8f8;
+  }
+}

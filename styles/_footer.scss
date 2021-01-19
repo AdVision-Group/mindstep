@@ -1,0 +1,62 @@
+#footer {
+  min-height: 50vh;
+  background-color: rgb(40,40,40);
+  display: flex;
+  align-items: center;
+
+  .footer-wrapper {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 8rem;
+    
+    .sitemap,
+    .activity,
+    .contact,
+    .about,
+    .personal{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        h2{
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+       
+        
+    }
+    .socials{
+        display: flex;
+        margin-top: 1rem;
+        i{  
+            margin-right: 2rem;
+        }
+    }
+    .about{
+        width: 10%;
+        p{
+            margin-top: 0.5rem;
+            font-size: 2rem;
+            opacity: 0.5;
+            font-weight: 400;
+            line-height: 3rem;
+        }
+    }
+  }
+  a {
+    color: white;
+    opacity: 0.5;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 1rem;
+  }
+  .socials{
+    a{
+      opacity: 1;
+
+    }
+  }
+}

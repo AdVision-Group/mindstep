@@ -1,0 +1,181 @@
+#occupation {
+  min-height: 100vh;
+  padding-bottom: 40rem;
+  position: relative;
+
+  .wrapper {
+    background-color: rgb(242, 242, 242);
+    .top-bg {
+      //margin-bottom: -20%;
+      //margin-top: -50%;
+      width: 100%;
+
+      position: absolute;
+      z-index: -1;
+      margin-top: -20%;
+    }
+    .bottom-bg {
+      position: absolute;
+      z-index: -1;
+      margin-top: -20%;
+      width: 100%;
+    }
+  }
+  .transition {
+    transition: 0.5s;
+  }
+  .training,
+  .psychology {
+    margin-bottom: -0.3rem;
+  }
+  .psychology {
+    padding-top: 3rem;
+  }
+  .balance {
+    padding-bottom: 3rem;
+  }
+
+  .occupation-div {
+    .occupation-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: -0.2rem;
+      max-width: 70%;
+      margin: auto;
+    }
+    img {
+      max-height: 250px;
+      width: 244.55px;
+      overflow-y: visible;
+    }
+
+    .left {
+      margin-right: 8rem;
+    }
+    .right {
+      margin-left: 8rem;
+    }
+    .occupation-text {
+      padding-top: 3rem;
+      max-width: 55%;
+
+      p {
+        margin-top: 2rem;
+      }
+    }
+    .mobile {
+      display: none;
+    }
+    .programs-third,
+    .programs-second,
+    .programs {
+      background-color: #eaeaea;
+      border: none;
+      padding: 1rem 2rem;
+      margin-top: 1rem;
+      outline: none;
+      cursor: pointer;
+      .down {
+        font-size: 1.2rem;
+        margin-left: 1rem;
+      }
+    }
+    .btn-hov:hover {
+      background-color: #d3cfcf;
+    }
+  }
+
+  .programs-all {
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    .arrow-left,
+    .arrow-right {
+      position: absolute;
+      color: black;
+      transform: translate(0, -50%);
+    }
+    .arrow-left {
+      left: 2%;
+      top: 50%;
+    }
+    .arrow-right {
+      right: 2%;
+      top: 50%;
+    }
+    .dots {
+      .orange,
+      .blue,
+      .green {
+        color: #c4c4c4;
+        margin: 0 2rem 2rem 0;
+        font-size: 1.5rem;
+      }
+
+      .active {
+        color: rgb(40, 40, 40);
+      }
+      .active-second {
+        color: rgb(40, 40, 40);
+      }
+      .active-third {
+        color: rgb(40, 40, 40);
+      }
+    }
+  }
+  .race {
+    display: none;
+  }
+  .programs-balance,
+  .programs-learning,
+  .programs-beginner {
+    display: none;
+    padding-top: 6rem;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 5rem;
+    h3,
+    h2 {
+      margin: 2rem 0;
+    }
+    p {
+      line-height: 3.4rem;
+    }
+    ul {
+      li {
+        font-weight: 400;
+        margin-top: 1rem;
+        cursor: default;
+        .green {
+          opacity: 1;
+        }
+      }
+      .circle {
+        color: rgb(40, 40, 40);
+        font-size: 1.5rem;
+        margin-right: 2rem;
+      }
+    }
+    .bottom-bold {
+      margin-top: 4rem;
+      font-size: 2rem;
+    }
+  }
+  .green {
+    color: rgb(40, 40, 40);
+    font-size: 1.5rem;
+    margin-right: 2rem;
+  }
+
+  .heading-michal {
+    position: absolute;
+    bottom: 0;
+    line-height: 0.39;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #536260;
+    width: 100%;
+    text-align: center;
+  }
+}

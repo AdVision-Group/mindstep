@@ -1,0 +1,35 @@
+#hero {
+  position: relative;
+  .hero-wrapper{
+  min-height: 60vh;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem 0 30em 0;
+  
+  .hero-descp {
+    padding-left: 5rem;
+    .quote {
+      font-size: $text;
+      margin: 3rem 0;
+    }
+  }
+  .quote-name {
+    font-weight: 600;
+    font-size: $text;
+    margin-left: 2rem;
+  }
+  .portrait {
+    border-radius: 50%;
+    max-height: 230px;
+  }
+  //.wave-top{
+   // position: absolute;
+  //  width: 100%;
+  //  bottom: -60%;
+  //  z-index: -2;
+ //}
+}
+}

@@ -1,0 +1,535 @@
+$header1: 9rem;
+$header2: 3rem;
+$header3: 2.5rem;
+$text: 2.2rem;
+$headings: 8rem;
+$headings-small: 4rem;
+
+@import "globals";
+@import "intro";
+@import "hero";
+@import "occupation";
+@import "michal";
+@import "reference";
+@import "media";
+@import "contact";
+@import "footer";
+@media screen and (max-width: 1214px) {
+  //INTRO SECTION
+  #intro {
+    .nav-links {
+      width: 60%;
+    }
+    .consultation{
+      width: 10%;
+      right: 5%;
+    }
+  }
+
+  //OCCUPATION SECTION
+  #occupation {
+    
+    .occupation-text {
+      padding-top: 2rem;
+      p {
+        font-size: 1.8rem;
+      }
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  //MICHAL SECTION
+  #michal {
+    p {
+      padding-bottom: 6rem;
+    }
+  }
+
+  //MEDIA SECTION
+  #media {
+    
+      .media-content {
+        width: 50%;
+      }
+      padding: 10rem 0 15rem 0;
+    
+  }
+
+  //REFERENCE SECTION
+  #reference {
+    .reference-wrapper {
+      .review {
+        min-width: 25%;
+        p {
+          font-size: 2rem;
+        }
+        h2 {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+
+  //CONTACT SECTION
+  #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    .map{
+      width: 100%;
+    }
+  }
+
+  //FOOTER
+  #footer {
+    .footer-wrapper {
+      .about {
+        width: 15%;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      a,
+      p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1086px) {
+  //INTRO SECTION
+  #intro {
+    position: relative;
+    .logo {
+      display: none;
+    }
+    .burger {
+      display: block;
+      position: fixed;
+      top: 3%;
+      right: 5%;
+      z-index: 99;
+    }
+    .burger-icon {
+      color: black;
+    }
+
+    .nav-links {
+      position: fixed;
+      display: none;
+      flex-direction: column;
+      width: 100vw;
+      background-color: white;
+      text-align: center;
+      height: 100vh;
+      padding: 8rem 0;
+
+      z-index: 99;
+      .dropdown {
+        justify-content: center;
+        i {
+          display: none;
+        }
+      }
+      li {
+        padding: 2rem 0;
+        background-color: white;
+      }
+      li:hover {
+        background-color: #f8f8f8;
+      }
+
+      .media-icons {
+        display: none;
+      }
+    }
+    .logo-mb {
+      display: block;
+    }
+  }
+
+  //OCCUPATION SCTION
+  #occupation {
+    .wrapper{
+    .occupation-text {
+      padding-top: 0rem;
+      p {
+        font-size: 1.7rem;
+      }
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+    .training,
+  .psychology {
+    margin-bottom: -0.9rem;
+  }
+  }
+    
+  }
+
+  //MEDIA SECTION
+  #media {
+    .media-wrapper {
+      width: 90%;
+    }
+  }
+  //REFERENCE SECTION
+  #reference{
+    .review-right{
+      right: 3%;
+    }
+    .review-left{
+      left: 3%;
+    }
+    
+  }
+
+}
+
+
+
+@media screen and (max-width: 871px) {
+  // INTRO SECTION
+  #intro {
+    .intro-text-wrapper {
+      .intro-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        h2 {
+          font-size: 3.5rem;
+        }
+        p {
+          font-size: 2.5rem;
+        }
+      }
+    }
+    .consultation{
+      width: 14%;
+      font-size: 1.3rem;
+    }
+    .flex {
+      display: flex;
+    }
+  }
+  //HERO SECTION
+  #hero {
+    .hero-wrapper{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 7rem 0 15rem;
+    .hero-wrapper{
+      .wave-top{
+        bottom: -5rem;
+        z-index: 2;
+      }
+    }
+  
+    .hero-descp {
+      padding: 2rem 0;
+    }
+    .portrait {
+      height: 200px;
+      width: 200px;
+    }
+  }
+  }
+  .heading-activities,
+  .heading-michal,
+  .heading-reference,
+  .heading-media,
+  .heading-contact {
+    font-size: $headings;
+  }
+
+  //OCCUPATION SECTION
+  #occupation {
+    
+    .wave-bottom{
+      bottom: 10%;
+    }
+    .picture{
+      display: none;
+    }
+    
+    .occupation-div {
+      padding-top: 6rem;
+      .occupation-wrapper{
+        display: block;
+        width: 100%;
+        padding-bottom: 5rem;
+      }
+      .picture {
+        display: none;
+        justify-content: center;
+        img {
+          margin: 0;
+        }
+      }
+      .mobile{
+        display: flex;
+      }
+      .right {
+        display: none;
+      }
+      .occupation-text {
+        text-align: center;
+        max-width: 100%;
+        margin: auto;
+        padding-top: 3rem;
+      }
+     
+    }
+  }
+  //MICHAL SECTION
+
+  #michal {
+    .media-text {
+      text-align: center;
+    }
+  }
+  //MEDIA SECTION
+  #media {
+    padding-bottom: 5rem;
+    .media-wrapper {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 8rem;
+      .media-content {
+        width: 80%;
+       
+      }
+    }
+    
+  }
+
+  //REFERENCE SECTION
+  #reference {
+    .reference-wrapper {
+      padding: 8rem 0rem 8rem 0rem;
+      flex-direction: column;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+     .stars{
+       width: 30%;
+       margin: auto;
+     }
+      .review {
+        text-align: center;
+        width: 80%;
+        margin-top: 8rem;
+      }
+    }
+    .heading-media{
+      transform: translate(-50%, 0);
+
+    }
+    padding-bottom: 10rem;
+
+  }
+
+  //CONTACT SECTION
+  #contact {
+    .contact-info {
+      width: 100%;
+      .info {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        padding: 5rem 0 5rem 0;
+        .email,
+        .phone,
+        .address{
+          width: 50%
+        }
+      }
+    }
+
+  }
+  //FOOTER
+  #footer {
+    padding-bottom: 6rem;
+    .footer-wrapper {
+      width: 80%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      .sitemap,
+      .activity,
+      .contact,
+      .about,
+      .personal {
+        align-items: center;
+        justify-content: center;
+      }
+      h2 {
+        margin: 4rem 0rem 0rem 0rem;
+      }
+      .about {
+        width: 100%;
+        text-align: center;
+      }
+      .contact {
+        grid-column: span 2;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 546px) {
+  p {
+    font-size: 2rem;
+  }
+  // INTRO SECTION
+
+  #intro {
+    min-height: 90vh;
+    .intro-text-wrapper {
+      .intro-text {
+        width: 90%;
+        text-align: center;
+        padding-bottom: 10rem;
+        h2 {
+          font-size: 3rem;
+        }
+        p {
+          font-size: 2rem;
+          margin-bottom: 4rem;
+        }
+        .more {
+          margin: 0 0 2rem 0;
+        }
+      }
+    }
+    .consultation{
+      width: 20%;
+    }
+    .whatsapp{
+      right: 8%;
+    }
+    
+    .intro-arrow-right,
+    .intro-arrow-left {
+      font-size: 3.5rem;
+    }
+  
+  }
+  .heading-activities,
+  .heading-michal,
+  .heading-reference,
+  .heading-media,
+  .heading-contact {
+    font-size: $headings-small;
+  }
+  //CONTACT SECTION
+  #contact {
+    .contact-info{
+      width: 100%;
+      
+      .info{
+        margin-bottom: 4rem;
+
+        width: 100%;
+        .email,
+        .phone,
+        .address{
+          width: 70%;
+          margin: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 4rem;
+        }
+      }
+    }
+
+  }
+  //MICHAL SECTION
+  #michal {
+    .media-text {
+      width: 90%;
+      p {
+        line-height: 3.5rem;
+      }
+    }
+  }
+
+  //FOOTER SECTION
+  #footer {
+    .footer-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  // OCCUPATION SECTION
+  #occupation {
+    .wave-bottom{
+      bottom: 10%;
+    }
+    .programs-balance,
+    .programs-learning,
+    .programs-beginner {
+      text-align: center;
+      ul {
+        li {
+          text-align: left;
+        }
+      }
+      p,
+      li {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 3rem;
+      }
+    }
+  }
+  #media {
+    .media-wrapper {
+      .media-content {
+        width: 90%;
+      }
+    }
+  }
+
+  //REFERENCE SECTION
+  #reference {
+    .reference-wrapper {
+      height: 60vh;
+      .review {
+        width: 60%;
+      }
+    }
+    
+  }
+
+  //HERO SECTION
+  #hero{
+    .hero-wrapper{
+      .wave-top{
+        bottom: -10%;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1461px) {
+  #contact {
+    .info {
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

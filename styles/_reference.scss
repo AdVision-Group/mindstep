@@ -1,0 +1,63 @@
+#reference{
+    position: relative;
+    .reference-wrapper{
+        min-height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+        margin-bottom: 5rem;
+
+        .review{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: auto;
+            .reviewer{
+                width: 300px;
+                display: flex;
+                align-items: center;
+                font-size: 4.5rem;
+                .person-review{
+                    font-size: 5rem;
+                }
+                
+            }
+            .stars{
+                width: 300px;
+                display: flex;
+                margin: 1rem 0 1rem 0;
+                .star{
+                    font-size: 4rem;
+                }
+            }
+            
+        }
+    }
+    
+    .review-right,
+    .review-left{
+        position: absolute;
+        bottom: 50%;
+        font-size: 4.5rem;
+        cursor: pointer;
+        transform: translate(0,100%);
+
+    }
+    .review-right{
+        right: 5%;
+
+    }
+    .review-left{
+        left: 5%;
+    }
+
+    .heading-media{
+        position: absolute;
+        color: #536260;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 5rem);
+        line-height: 0.77;
+    }
+    
+}
