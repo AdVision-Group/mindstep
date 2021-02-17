@@ -170,7 +170,7 @@ i {
           justify-content: center;
   width: 70%;
   margin: auto;
-  height: 90vh;
+  height: 80vh;
 }
 
 #intro .intro-text-wrapper .intro-text {
@@ -1254,7 +1254,8 @@ i {
 
 @media screen and (max-width: 546px) {
   p {
-    font-size: 2rem;
+    font-size: 1.7rem;
+    line-height: 2.3rem;
   }
   #intro {
     min-height: 90vh;
@@ -1265,10 +1266,10 @@ i {
     padding-bottom: 10rem;
   }
   #intro .intro-text-wrapper .intro-text h2 {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
   #intro .intro-text-wrapper .intro-text p {
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-bottom: 4rem;
   }
   #intro .intro-text-wrapper .intro-text .more {
@@ -1318,7 +1319,7 @@ i {
     width: 90%;
   }
   #michal .media-text p {
-    line-height: 3.5rem;
+    line-height: 2.3rem;
   }
   #footer .footer-wrapper {
     display: -webkit-box;
@@ -1378,3 +1379,110 @@ i {
   }
 }
 /*# sourceMappingURL=styles.css.map */
+/* zmeny */
+.intro-text{
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 10px;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+@media screen and (max-width:900px){
+  .intro-text{
+    padding-bottom: 20px !important;
+  }
+  .mt-point{
+    padding-bottom: 0 !important;
+  }
+}
+.logo-name{
+font-size: 12px;
+margin-top: -23px;
+margin-left: 5px;
+}
+
+.logo-name.mobile{
+  margin-left: 23px;
+}
+
+.my-story{
+  display: flex;
+}
+
+.my-story > p{
+  flex: 2;
+}
+.my-story > .ms-wrapper{
+  flex: 1;
+}
+
+.ms-wrapper > img{
+  display: block;
+  width: 100%;
+  margin-top: 40px;
+  margin-left: 10px;
+  object-fit: contain;
+}
+
+@media screen and (max-width:900px){
+  .my-story{
+    flex-direction: column;
+  }
+  .ms-wrapper > img{
+    margin-left: 0;
+  }
+}
+
+.pricing-h{
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+.pricing{
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 15px;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.pricing > tr > td{
+  margin-right: 10px;
+}
+
+.t-head{
+  font-weight:bold;
+  padding-bottom: 10px;
+  padding-top:20px;
+}
+
+.popup{
+  z-index: 10;
+  position: fixed;
+  font-size: 14px;
+  background-color: #ffffff;
+  top: 18%;
+  bottom: auto;
+  right: -310px;
+  width: 300px;
+  transition: 0.5s all;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.close{
+  z-index: 11;
+  display: block;
+  cursor: pointer;
+  color: black;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+@media (max-width:900px){
+  .popup{
+    width: 50%;
+  }
+}
